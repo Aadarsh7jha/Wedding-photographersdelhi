@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>XYZ Weddings — Stories That Feel Like Forever.</title>
+  <meta name="description" content="XYZ Weddings is a luxury wedding photography studio based in Shahdara, Delhi — documentary wedding photography and films across India and beyond.">
+  <meta name="keywords" content="wedding photography Delhi, luxury wedding photographer India, destination wedding photographer, wedding films">
+  <meta name="theme-color" content="#f7f3ec">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="XYZ Weddings">
+  <meta property="og:locale" content="en_IN">
+  <meta property="og:title" content="XYZ Weddings — Stories That Feel Like Forever.">
+  <meta property="og:description" content="Luxury documentary wedding photography and films from Delhi, across India and beyond.">
+  <meta property="og:image" content="images/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="images/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/hero-desktop-2000.webp" media="(min-width: 768px)">
+  <link rel="preload" as="image" href="images/hero-mobile-1200.webp" media="(max-width: 767px)">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add("js");</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "XYZ Weddings",
+    "telephone": "+919876543210",
+    "email": "hello@xyzweddings.example",
+    "address": { "@type": "PostalAddress", "streetAddress": "XYZ Wedding Studio, Shahdara", "addressLocality": "Delhi", "addressCountry": "IN" },
+    "areaServed": "India",
+    "founder": { "@type": "Person", "name": "Aaryan Mehra" }
+  }
+  </script>
+</head>
+<body>
+  <a href="#story" class="sr-only skip-link">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header">
+    <nav class="nav shell" aria-label="Primary">
+      <a href="#home" class="brand-link">
+        <span class="logo" aria-label="XYZ Weddings">
+            <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M16 1.6 30.4 16 16 30.4 1.6 16 16 1.6Z" stroke="currentColor" stroke-width="0.9" opacity="0.55"/>
+              <path d="M16 7.2 24.8 16 16 24.8 7.2 16 16 7.2Z" stroke="currentColor" stroke-width="0.9" opacity="0.9"/>
+              <circle cx="16" cy="16" r="2.1" fill="currentColor"/>
+            </svg>
+            <span class="logo-text"><span class="logo-mark">XYZ</span><span class="logo-sub">Weddings</span></span>
+          </span>
+        <span class="sr-only">XYZ Weddings — home</span>
+      </a>
+
+      <ul class="nav-links">
+          <li><a href="#home" class="link-underline">Home</a></li>
+          <li><a href="#stories" class="link-underline">Stories</a></li>
+          <li><a href="#experience" class="link-underline">Experience</a></li>
+          <li><a href="#services" class="link-underline">Services</a></li>
+          <li><a href="#contact" class="link-underline">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn nav-cta"><span>Check Your Date</span></a>
+        <button type="button" class="menu-btn" id="menu-open" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu-inner">
+      <div class="shell mobile-menu-top">
+        <span class="logo" aria-label="XYZ Weddings">
+            <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M16 1.6 30.4 16 16 30.4 1.6 16 16 1.6Z" stroke="currentColor" stroke-width="0.9" opacity="0.55"/>
+              <path d="M16 7.2 24.8 16 16 24.8 7.2 16 16 7.2Z" stroke="currentColor" stroke-width="0.9" opacity="0.9"/>
+              <circle cx="16" cy="16" r="2.1" fill="currentColor"/>
+            </svg>
+            <span class="logo-text"><span class="logo-mark">XYZ</span><span class="logo-sub">Weddings</span></span>
+          </span>
+        <button type="button" class="menu-close" id="menu-close" aria-label="Close menu"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      </div>
+      <nav class="shell mobile-nav" aria-label="Mobile">
+        <ul>
+          <li style="--i:0"><a href="#home" data-close-menu>Home<span class="eyebrow text-gold">01</span></a></li>
+          <li style="--i:1"><a href="#stories" data-close-menu>Stories<span class="eyebrow text-gold">02</span></a></li>
+          <li style="--i:2"><a href="#experience" data-close-menu>Experience<span class="eyebrow text-gold">03</span></a></li>
+          <li style="--i:3"><a href="#services" data-close-menu>Services<span class="eyebrow text-gold">04</span></a></li>
+          <li style="--i:4"><a href="#contact" data-close-menu>Contact<span class="eyebrow text-gold">05</span></a></li>
+        </ul>
+      </nav>
+      <div class="shell mobile-menu-foot">
+        <a href="#contact" class="btn btn-solid" data-close-menu><span>Check Your Wedding Date</span></a>
+        <p class="mobile-phone">+91 98765 43210</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="hero-media" id="hero-media">
+        <picture>
+          <source media="(min-width: 768px)" type="image/webp"
+                  srcset="images/hero-desktop-900.webp 900w, images/hero-desktop-1400.webp 1400w, images/hero-desktop-2000.webp 2000w" sizes="100vw">
+          <source type="image/webp"
+                  srcset="images/hero-mobile-640.webp 640w, images/hero-mobile-900.webp 900w, images/hero-mobile-1200.webp 1200w" sizes="100vw">
+          <img class="img-fill hero-img" src="images/hero-mobile-1200.webp" width="1200" height="800" fetchpriority="high" decoding="async"
+               alt="Indian bride in a red lehenga and groom in an ivory sherwani with flower garlands, framed by sparklers">
+        </picture>
+        <div class="hero-shade"></div>
+      </div>
+
+      <div class="hero-content" id="hero-content">
+        <div class="shell">
+          <div class="hero-grid">
+            <div class="hero-title-col">
+              <p class="eyebrow text-goldsoft hero-in" style="--d:.5s;--rise:18px">Wedding Photography · Delhi, India</p>
+              <h1 class="display-xl hero-title hero-in" style="--d:.65s;--rise:30px">
+                Your Story,
+                <em>Beautifully Remembered.</em>
+              </h1>
+            </div>
+
+            <div class="hero-side-col hero-in" style="--d:.85s;--rise:24px">
+              <p class="hero-lead">Honest moments. Beautiful chaos. Photographs that bring you back to how it felt.</p>
+              <div class="hero-actions">
+                <a href="#contact" class="btn btn-light"><span>Check Your Wedding Date</span></a>
+                <a href="#stories" class="btn btn-ghost-white"><span>Explore Our Stories</span></a>
+              </div>
+              <div class="hero-meta">
+                <span>Shahdara, Delhi, India</span><span class="sep"></span>
+                <span>Est. 2018</span><span class="sep"></span>
+                <span>Available Worldwide</span>
+              </div>
+            </div>
+          </div>
+
+          <a href="#story" class="scroll-cue fade-in" style="--d:1.3s" aria-label="Scroll to brand story"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14m7-7-7 7-7-7"/></svg> Scroll</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BRAND STORY ============ -->
+    <section id="story" class="section-pad bg-ivory">
+      <div class="shell story-grid">
+        <div class="story-side reveal">
+          <p class="eyebrow text-gold">More Than Photographs</p>
+          <div class="rule"></div>
+          <figure class="story-figure">
+            <div class="frame">
+              <img class="img-fill" src="images/hero-detail.webp" alt="Intricate bridal mehendi and stacked bangles photographed in close-up" loading="lazy" decoding="async">
+            </div>
+            <figcaption>Detail study — the mehendi, Delhi</figcaption>
+          </figure>
+        </div>
+
+        <div class="story-main">
+          <div class="reveal" style="--delay:.08s">
+            <h2 class="display-lg">We preserve the moments you didn&rsquo;t know you&rsquo;d miss.</h2>
+          </div>
+          <div class="reveal story-lead" style="--delay:.16s">
+            <p class="body-lg">A wedding is rarely about the grand frame. It is your mother fixing your collar one last time. It is the cousin who cries before anyone else does. It is the silence between two people right after the pheras, when the noise finally fades and it is just the two of you.</p>
+          </div>
+          <div class="reveal" style="--delay:.22s">
+            <p class="body-lg">We photograph quietly, without staging emotion, so that years later you are not looking at pictures of a wedding — you are standing inside it again.</p>
+          </div>
+          <div class="reveal" style="--delay:.3s">
+            <p class="story-quote">&ldquo;Stories that feel like forever.&rdquo;</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIGNATURE STORIES ============ -->
+    <section id="stories" class="section-pad bg-ivory">
+      <div class="shell">
+        <div class="section-head">
+          <div class="reveal">
+            <p class="eyebrow text-gold">Signature Stories</p>
+            <h2 class="display-lg" style="max-width:16ch">Stories Worth Returning To.</h2>
+          </div>
+          <div class="reveal align-end" style="--delay:.1s">
+            <p class="body-lg">Four celebrations, four completely different worlds — each photographed on its own terms.</p>
+          </div>
+        </div>
+
+        <div class="stories-list" id="stories-list">
+        <div class="story-card-wrap" data-aspect="a" style="--i:0">
+          <article class="story-card">
+            <div class="story-photo">
+              <img class="img-fill" src="images/story-royal.jpg" alt="Bride and groom in pale pink traditional attire before the arches of a Jaipur palace" loading="lazy" decoding="async">
+              <span class="story-count">01 / 04</span>
+            </div>
+            <div class="story-body">
+              <p class="eyebrow text-gold">Jaipur, Rajasthan</p>
+              <h3 class="display-md">The Royal Celebration</h3>
+              <div class="rule"></div>
+              <p class="story-style">Palace Wedding · 3 Days</p>
+              <p class="body-lg">Amber Fort at first light, a baraat that refused to end, and a bride who laughed through every ritual. We shot this one like a period film.</p>
+              <a href="#gallery" class="link-underline story-link">View Story <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+            </div>
+          </article>
+        </div>
+        <div class="story-card-wrap flip" data-aspect="b" style="--i:1">
+          <article class="story-card">
+            <div class="story-photo">
+              <img class="img-fill" src="images/story-intimate.jpg" alt="Groom lifting a marigold garland to his bride during the varmala ritual" loading="lazy" decoding="async">
+              <span class="story-count">02 / 04</span>
+            </div>
+            <div class="story-body">
+              <p class="eyebrow text-gold">Delhi, India</p>
+              <h3 class="display-md">An Intimate Beginning</h3>
+              <div class="rule"></div>
+              <p class="story-style">Home Wedding · 40 Guests</p>
+              <p class="body-lg">Forty people, one terrace, and a grandmother&#x27;s saree stitched into a new beginning. Quiet, warm and impossibly tender.</p>
+              <a href="#gallery" class="link-underline story-link">View Story <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+            </div>
+          </article>
+        </div>
+        <div class="story-card-wrap" data-aspect="c" style="--i:2">
+          <article class="story-card">
+            <div class="story-photo">
+              <img class="img-fill" src="images/story-garden.jpg" alt="Bride in a red lehenga standing with her groom beside a misty lake in Udaipur" loading="lazy" decoding="async">
+              <span class="story-count">03 / 04</span>
+            </div>
+            <div class="story-body">
+              <p class="eyebrow text-gold">Udaipur, Rajasthan</p>
+              <h3 class="display-md">A Garden of Promises</h3>
+              <div class="rule"></div>
+              <p class="story-style">Lakeside Destination</p>
+              <p class="body-lg">Golden hour over the lake, marigold underfoot, and vows spoken softly enough that only the two of them heard it first.</p>
+              <a href="#gallery" class="link-underline story-link">View Story <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+            </div>
+          </article>
+        </div>
+        <div class="story-card-wrap flip" data-aspect="a" style="--i:3">
+          <article class="story-card">
+            <div class="story-photo">
+              <img class="img-fill" src="images/story-heirloom.jpg" alt="Couple in deep red and ivory traditional attire beneath festoon lights at an evening reception" loading="lazy" decoding="async">
+              <span class="story-count">04 / 04</span>
+            </div>
+            <div class="story-body">
+              <p class="eyebrow text-gold">Gurgaon, Haryana</p>
+              <h3 class="display-md">The Modern Heirloom</h3>
+              <div class="rule"></div>
+              <p class="story-style">Contemporary Editorial</p>
+              <p class="body-lg">String lights, heirloom jewellery, and a couple who wanted their album to look like a fashion editorial. We happily obliged.</p>
+              <a href="#gallery" class="link-underline story-link">View Story <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+            </div>
+          </article>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section id="gallery" class="section-pad bg-cream">
+      <div class="shell">
+        <div class="section-head">
+          <div class="reveal">
+            <p class="eyebrow text-gold">Selected Frames</p>
+            <h2 class="display-lg" style="max-width:14ch">A year, in fragments.</h2>
+          </div>
+          <div class="reveal align-end" style="--delay:.1s">
+            <p class="body-lg">Pulled from albums across Delhi, Jaipur, Udaipur and beyond.</p>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+        <figure class="g-item tall reveal" style="--delay:0.00s">
+          <img class="img-fill" src="images/gallery-bride.jpg" alt="Portrait of a laughing Indian bride in traditional attire and bridal jewellery" loading="lazy" decoding="async">
+          <div class="g-shade"></div>
+          <figcaption><span class="cap">Before the varmala</span><span class="cat">Bridal Portrait</span></figcaption>
+        </figure>
+        <figure class="g-item reveal" style="--delay:0.08s">
+          <img class="img-fill" src="images/gallery-sangeet.jpg" alt="Couple dancing together on stage at their sangeet celebration" loading="lazy" decoding="async">
+          <div class="g-shade"></div>
+          <figcaption><span class="cap">Sangeet, after midnight</span><span class="cat">Sangeet</span></figcaption>
+        </figure>
+        <figure class="g-item reveal" style="--delay:0.16s">
+          <img class="img-fill" src="images/gallery-pheras.jpg" alt="Hands offering ghee to the sacred fire during the pheras" loading="lazy" decoding="async">
+          <div class="g-shade"></div>
+          <figcaption><span class="cap">Seven steps</span><span class="cat">Pheras</span></figcaption>
+        </figure>
+        <figure class="g-item wide reveal" style="--delay:0.00s">
+          <img class="img-fill" src="images/gallery-haldi.jpg" alt="Bride wearing flower jewellery at her haldi ceremony" loading="lazy" decoding="async">
+          <div class="g-shade"></div>
+          <figcaption><span class="cap">Sunlit haldi</span><span class="cat">Haldi</span></figcaption>
+        </figure>
+        <figure class="g-item tall reveal" style="--delay:0.08s">
+          <img class="img-fill" src="images/gallery-mehendi.jpg" alt="Intricate mehendi patterns on the bride&#x27;s hands framed by stacked bridal bangles" loading="lazy" decoding="async">
+          <div class="g-shade"></div>
+          <figcaption><span class="cap">The mehendi</span><span class="cat">Details</span></figcaption>
+        </figure>
+        <figure class="g-item reveal" style="--delay:0.16s">
+          <img class="img-fill" src="images/gallery-couple-night.jpg" alt="Editorial night portrait of a couple in traditional Indian wedding attire" loading="lazy" decoding="async">
+          <div class="g-shade"></div>
+          <figcaption><span class="cap">Lantern light</span><span class="cat">Couple Portrait</span></figcaption>
+        </figure>
+        <figure class="g-item reveal" style="--delay:0.00s">
+          <img class="img-fill" src="images/gallery-varmala.jpg" alt="Bride and groom exchanging flower garlands during the varmala ceremony" loading="lazy" decoding="async">
+          <div class="g-shade"></div>
+          <figcaption><span class="cap">The varmala</span><span class="cat">Ceremony</span></figcaption>
+        </figure>
+        <figure class="g-item wide reveal" style="--delay:0.08s">
+          <img class="img-fill" src="images/gallery-celebration.jpg" alt="Guests celebrating around the couple during the garland exchange" loading="lazy" decoding="async">
+          <div class="g-shade"></div>
+          <figcaption><span class="cap">Beautiful chaos</span><span class="cat">Celebration</span></figcaption>
+        </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section-pad bg-ivory">
+      <div class="shell exp-grid">
+        <div class="exp-photo reveal">
+          <div class="wrap">
+            <div class="frame">
+              <img class="img-fill" src="images/about-photographer.jpg" alt="Lead photographer holding a camera at a floral-decorated wedding venue" loading="lazy" decoding="async">
+            </div>
+            <div class="exp-badge">
+              <p class="name">Aaryan Mehra</p>
+              <p class="role">Lead Photographer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-text">
+          <div class="reveal"><p class="eyebrow text-gold">The Experience</p></div>
+          <div class="reveal" style="--delay:.08s">
+            <h2 class="display-lg">Quietly present. Always looking for the real moment.</h2>
+          </div>
+          <div class="reveal exp-lead" style="--delay:.14s">
+            <p class="body-lg">I shot my first wedding in a Shahdara gali with a borrowed camera and far too much confidence. Eight years later, the gear has changed and the confidence has turned into patience — which, it turns out, is the only thing that matters.</p>
+          </div>
+          <div class="reveal" style="--delay:.2s">
+            <p class="body-lg">Our team stays out of the way. We don&rsquo;t interrupt rituals, we don&rsquo;t choreograph tears, and we never ask you to repeat a moment that already happened. Everything you see in your album is something that truly took place.</p>
+          </div>
+          <div class="reveal" style="--delay:.26s">
+            <dl class="stats">
+              <div><dt>8+</dt><dd>Years Behind the Camera</dd></div>
+              <div><dt>250+</dt><dd>Weddings Captured</dd></div>
+              <div><dt>4.9/5</dt><dd>Couple Satisfaction</dd></div>
+              <div><dt>14</dt><dd>Cities Travelled</dd></div>
+            </dl>
+            <p class="note muted">Demonstration figures — replace with your real numbers</p>
+          </div>
+          <div class="reveal" style="--delay:.3s">
+            <p class="signature" aria-hidden="true">Aaryan Mehra</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="section-pad bg-charcoal services">
+      <div class="shell">
+        <div class="section-head">
+          <div class="reveal">
+            <p class="eyebrow text-goldsoft">Collections</p>
+            <h2 class="display-lg" style="max-width:16ch">Built around your celebration.</h2>
+          </div>
+          <div class="reveal align-end" style="--delay:.1s">
+            <p class="body-lg">Every collection is tailored after a conversation. Prices below are indicative starting points.</p>
+          </div>
+        </div>
+
+        <ul class="service-list">
+        <li>
+          <a href="#contact" class="service-row">
+            <span class="service-thumb"><img class="img-fill" src="images/service-photography.jpg" alt="Bride and groom performing rituals at a Jaipur wedding ceremony" loading="lazy" decoding="async"></span>
+            <span class="service-info">
+              <span class="service-title">Wedding Photography</span>
+              <span class="service-desc">Full-day documentary coverage across every function — haldi to vidaai — delivered as a hand-edited editorial album.</span>
+            </span>
+            <span class="service-meta">
+              <span class="service-price">From ₹1,85,000</span>
+              <span class="service-enquire">Enquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="service-row">
+            <span class="service-thumb"><img class="img-fill" src="images/service-films.jpg" alt="Newlyweds surrounded by sparklers at an evening wedding celebration" loading="lazy" decoding="async"></span>
+            <span class="service-info">
+              <span class="service-title">Wedding Films</span>
+              <span class="service-desc">Cinematic films cut with restraint — real vows, real audio, no stock-music clichés.</span>
+            </span>
+            <span class="service-meta">
+              <span class="service-price">From ₹2,40,000</span>
+              <span class="service-enquire">Enquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="service-row">
+            <span class="service-thumb"><img class="img-fill" src="images/service-prewedding.jpg" alt="Couple in traditional Indian attire during a pre-wedding portrait session" loading="lazy" decoding="async"></span>
+            <span class="service-info">
+              <span class="service-title">Pre-Wedding Stories</span>
+              <span class="service-desc">A half-day session in a place that means something to the two of you. No forced poses.</span>
+            </span>
+            <span class="service-meta">
+              <span class="service-price">From ₹65,000</span>
+              <span class="service-enquire">Enquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="service-row">
+            <span class="service-thumb"><img class="img-fill" src="images/service-destination.jpg" alt="Udaipur&#x27;s lake palace at golden hour, a destination wedding setting" loading="lazy" decoding="async"></span>
+            <span class="service-info">
+              <span class="service-title">Destination Weddings</span>
+              <span class="service-desc">Travel-ready teams for palace, beach and mountain celebrations anywhere in the world.</span>
+            </span>
+            <span class="service-meta">
+              <span class="service-price">Custom Collection</span>
+              <span class="service-enquire">Enquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="service-row">
+            <span class="service-thumb"><img class="img-fill" src="images/service-intimate.jpg" alt="Close-up of a couple&#x27;s hands during a small, intimate wedding ceremony" loading="lazy" decoding="async"></span>
+            <span class="service-info">
+              <span class="service-title">Intimate Celebrations</span>
+              <span class="service-desc">Court marriages, home weddings and elopements — covered with the same care as a 500-guest affair.</span>
+            </span>
+            <span class="service-meta">
+              <span class="service-price">From ₹48,000</span>
+              <span class="service-enquire">Enquire <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></span>
+            </span>
+          </a>
+        </li>
+        </ul>
+
+        <p class="note">Illustrative pricing — edit in index.html</p>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section-pad bg-ivory testimonials">
+      <div class="shell">
+        <div class="reveal">
+          <p class="eyebrow text-gold">In Their Words</p>
+          <h2 class="display-lg">What couples remember afterwards.</h2>
+        </div>
+
+        <div class="t-grid">
+        <div class="reveal" style="--delay:0.00s">
+          <figure class="t-card">
+            <div class="t-avatar"><img class="img-fill" src="images/testimonial-1.jpg" alt="Couple in traditional Indian wedding attire" loading="lazy" decoding="async"></div>
+            <blockquote>&ldquo;We keep going back to one frame of my father adjusting my dupatta. Nobody told him to. Nobody saw it. Aaryan did.&rdquo;</blockquote>
+            <figcaption>
+              <p class="t-couple">Ananya &amp; Rohit</p>
+              <p class="t-place">Jaipur, Rajasthan</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="reveal" style="--delay:0.08s">
+          <figure class="t-card">
+            <div class="t-avatar"><img class="img-fill" src="images/testimonial-2.jpg" alt="Bride and groom at their wedding ceremony" loading="lazy" decoding="async"></div>
+            <blockquote>&ldquo;They were everywhere and nowhere. We never felt photographed, yet the album has every single thing we were scared of forgetting.&rdquo;</blockquote>
+            <figcaption>
+              <p class="t-couple">Meher &amp; Kabir</p>
+              <p class="t-place">Delhi, India</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="reveal" style="--delay:0.16s">
+          <figure class="t-card">
+            <div class="t-avatar"><img class="img-fill" src="images/testimonial-3.jpg" alt="Couple photographed at their wedding celebration" loading="lazy" decoding="async"></div>
+            <blockquote>&ldquo;Three months later my mother still shows the film to guests. That is the only review that matters to us.&rdquo;</blockquote>
+            <figcaption>
+              <p class="t-couple">Ishita &amp; Veer</p>
+              <p class="t-place">Udaipur, Rajasthan</p>
+            </figcaption>
+          </figure>
+        </div>
+        </div>
+
+        <p class="note">Sample testimonials for demonstration — replace with real couple feedback before launch.</p>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section-pad bg-cream">
+      <div class="shell contact-grid">
+        <div class="contact-info">
+          <div class="reveal">
+            <p class="eyebrow text-gold">Enquire</p>
+            <h2 class="display-lg">Let&rsquo;s make room for your story.</h2>
+            <p class="body-lg">Tell us a little about your celebration. We&rsquo;ll help you explore the right photography collection.</p>
+          </div>
+
+          <div class="reveal" style="--delay:.12s">
+            <ul class="contact-list">
+              <li class="top"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>
+                <span class="block">XYZ Wedding Studio</span>
+                <span class="block">Shahdara, Delhi</span>
+                <span class="block">India</span>
+                  <span class="block tiny">Placeholder address</span>
+                </span>
+              </li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg><a href="tel:+919876543210" class="link-underline">+91 98765 43210</a></li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><a href="mailto:hello@xyzweddings.example" class="link-underline break-all">hello@xyzweddings.example</a></li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3Z"/><circle cx="12" cy="13" r="3"/></svg><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="link-underline">Follow XYZ Weddings on Instagram</a></li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg><a href="https://www.google.com/maps/search/?api=1&query=Shahdara%2C%20Delhi%2C%20India" target="_blank" rel="noopener noreferrer" class="link-underline">Get directions to the studio</a></li>
+            </ul>
+          </div>
+
+          <div class="reveal" style="--delay:.18s">
+            <div class="map-box">
+              <iframe title="Map showing the approximate studio location in Shahdara, Delhi" src="https://maps.google.com/maps?q=Shahdara%2C%20Delhi%2C%20India&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-col reveal" style="--delay:.08s">
+          <!--
+            FORM SETTINGS (also see js/main.js):
+            data-endpoint  : your form service URL (e.g. Formspree "https://formspree.io/f/xxxx").
+                             Leave empty to send the enquiry through WhatsApp instead.
+            data-whatsapp  : WhatsApp number, digits only, country code first.
+          -->
+          <form class="enquiry-form" id="enquiry-form" novalidate data-endpoint="" data-whatsapp="919876543210">
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Your name *</label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Ananya" aria-describedby="name-error">
+                <p class="field-error" id="name-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="partnerName">Partner's name (optional)</label>
+                <input id="partnerName" name="partnerName" type="text" placeholder="Rohit">
+              </div>
+              <div class="field">
+                <label for="phone">Phone number *</label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+91 98765 43210" aria-describedby="phone-error">
+                <p class="field-error" id="phone-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="weddingDate">Wedding date *</label>
+                <input id="weddingDate" name="weddingDate" type="date" aria-describedby="weddingDate-error">
+                <p class="field-error" id="weddingDate-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="location">Wedding location *</label>
+                <input id="location" name="location" type="text" placeholder="Jaipur, Rajasthan" aria-describedby="location-error">
+                <p class="field-error" id="location-error" hidden></p>
+              </div>
+              <div class="field">
+                <label for="eventType">Event type</label>
+                <select id="eventType" name="eventType">
+                  <option value="Wedding Photography">Wedding Photography</option>
+                  <option value="Wedding Films">Wedding Films</option>
+                  <option value="Pre-Wedding Story">Pre-Wedding Story</option>
+                  <option value="Destination Wedding">Destination Wedding</option>
+                  <option value="Intimate Celebration">Intimate Celebration</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="message">Tell us about your celebration</label>
+              <textarea id="message" name="message" rows="4" placeholder="Number of functions, venues, what matters most to you…"></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="btn btn-solid" id="submit-btn"><span id="submit-label">Send Enquiry</span></button>
+              <a href="https://wa.me/919876543210?text=Hi%2C%20I%27m%20interested%20in%20wedding%20photography.%20I%27d%20like%20to%20check%20your%20availability." id="wa-form-link" target="_blank" rel="noopener noreferrer" class="btn btn-outline-dark"><span>Enquire on WhatsApp</span></a>
+            </div>
+
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+            <p class="note form-note">We only use your details to reply to your enquiry. No marketing, ever.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo" aria-label="XYZ Weddings">
+            <svg width="26" height="26" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M16 1.6 30.4 16 16 30.4 1.6 16 16 1.6Z" stroke="currentColor" stroke-width="0.9" opacity="0.55"/>
+              <path d="M16 7.2 24.8 16 16 24.8 7.2 16 16 7.2Z" stroke="currentColor" stroke-width="0.9" opacity="0.9"/>
+              <circle cx="16" cy="16" r="2.1" fill="currentColor"/>
+            </svg>
+            <span class="logo-text"><span class="logo-mark">XYZ</span><span class="logo-sub">Weddings</span></span>
+          </span>
+          <p class="footer-tagline">Stories That Feel Like Forever.</p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer">
+          <p class="eyebrow footer-label">Navigate</p>
+          <ul>
+            <li><a href="#home" class="link-underline">Home</a></li>
+            <li><a href="#stories" class="link-underline">Stories</a></li>
+            <li><a href="#experience" class="link-underline">Experience</a></li>
+            <li><a href="#services" class="link-underline">Services</a></li>
+            <li><a href="#contact" class="link-underline">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-studio">
+          <p class="eyebrow footer-label">Studio</p>
+          <address>
+            <span>XYZ Wedding Studio, Shahdara, Delhi, India</span>
+            <a class="link-underline" href="tel:+919876543210">+91 98765 43210</a>
+            <a class="link-underline break-all" href="mailto:hello@xyzweddings.example">hello@xyzweddings.example</a>
+            <a class="link-underline" href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          </address>
+        </div>
+      </div>
+
+      <div class="footer-bottom note">
+        <p>© <span id="year">2026</span> XYZ Weddings. All rights reserved.</p>
+        <p>Demo site — all content is fictional sample data.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ WHATSAPP FLOATING BUTTON ============ -->
+  <a href="https://wa.me/919876543210?text=Hi%2C%20I%27m%20interested%20in%20wedding%20photography.%20I%27d%20like%20to%20check%20your%20availability." id="wa-float" class="wa-btn" target="_blank" rel="noopener noreferrer" aria-label="Chat with XYZ Weddings on WhatsApp">
+    <svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.32 4.96L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.11.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.26.86 5.82 2.41a8.17 8.17 0 0 1 2.41 5.82c0 4.54-3.7 8.22-8.24 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.79.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
